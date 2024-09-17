@@ -10,11 +10,11 @@ function dados() {
 const usuarios = dados();
 
 function login() {
-    const log = document.querySelector('#login').value;
-    const senha = document.querySelector('#password').value;
+    const log = document.querySelector('#email').value;
+    const senha = document.querySelector('#senha').value;
     
     for (let i = 0; i < usuarios.length; i++) {
-        if (log === usuarios[i].login && senha === usuarios[i].password) {
+        if (log === usuarios[i].email && senha === usuarios[i].password) {
             alert('Você Logou!');
             return;
         }
